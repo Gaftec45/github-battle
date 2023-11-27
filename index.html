@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h3>GitHub Battle</h3>
+    <p>Some battles are worth fighting ; ) </p>
+    <button style="width: 130px; height: 50px; text-align: center; font-size: 18px; background: #5cb85c; border: none;
+    cursor: pointer; color: #fff; border-radius: 5px;" | id="startButton">Get Started</button>
+  </div>
+
+<!-- ... (previous HTML code) ... -->
+
+<div class="player-input hidden" id="playerOneScreen">
+    <h3>Player One</h3>
+    <input type="text" id="playerOneInput" placeholder="GitHub Username" required><br><br>
+    <button id="playerOneButton">Continue</button>
+  </div>
+  
+  <div class="player-input hidden" id="playerTwoScreen">
+    <h3>Player Two</h3>
+    <input type="text" id="playerTwoInput" placeholder="GitHub Username" required><br><br>
+    <button id="playerTwoButton">Continue</button>
+  </div>
+  
+<!-- ... (previous HTML code) ... -->
+  <div class="confirm-players hidden">
+    <h3>Confirm Players</h3>
+    <div class="player-columns">
+      <div class="player-info" id="playerOneInfo">
+        <h2>Player One</h2>
+        <!-- Display player one details here -->
+        </div>
+  
+      <div class="player-Info" id="playerTwoInfo">
+        <h3>Player Two</h3>
+        <!-- Display player two details here -->
+      </div>
+    </div>
+    <div id="desk"></div>
+  <div class="btn3">  
+    <button id="initiateBattle">Initiate Battle</button>
+    <br>
+    <br>
+    <button id="reselectPlayers">Reselect Players</button>
+  </div>
+  </div>
+  <!-- ... (remaining HTML code) ... -->
+  
+  <div id="wrapper1">
+      <div class="winner-screen hidden">
+        <h3>Winner</h3>
+        <h4 id="winnerText"></h4>
+      </div>
+      <div class="battle-result hidden">
+        <div class="result-container">
+          <div class="winner-info">
+            <span id="winnerScore"></span>
+            <h4>Player 1</h4>
+            <div id="winnerDetails">
+              <!-- Display winner details here -->
+            </div>
+          </div>
+          <div class="loser-info">
+            <span id="loserScore"></span>
+            <h4>Player 2</h4>
+            <div id="loserDetails">
+              <!-- Display loser details here -->
+            </div>  
+            </div>
+          </div>
+          <div id="desk2"></div>
+        <div class="btn3">
+          <button id="startOverButton" style="margin-top: 12px;">Start Over</button>
+        </div>
+        </div>
+      </div>
+   <script src="script.js"></script>
+</body>
+</html>

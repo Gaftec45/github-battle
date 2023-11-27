@@ -1,0 +1,227 @@
+body {
+    font-family: Arial;
+
+    text-align: center;
+  }
+  
+  .container {
+    display: block;
+  }
+
+  button{ background: #5cb85c; width: 250px; height: 35px; font-size: 18px; border-radius: 5px; 
+   color: #fff; cursor: pointer; border: none; margin: auto;
+  }
+
+  h3{
+    font-size: 50px; margin-top: 70px;
+  }
+  p{font-size: 20px; margin-bottom: 20px;}
+  
+  .player-input, #wrapper, #wrapper1, .confirm-players, .battle-result {
+    display: none;
+  }
+
+
+  /* .confirm-players{
+    height: 2200px;
+    padding: 10px;
+  } */
+  .confirm-players, .winner-screen{
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Style the "Reselect Players" button */
+  #reselectPlayers {
+    background-color: #5bc0de;
+    width: 160px;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+  }
+
+  #reselectPlayers:hover{background-color: #46b8da;  }
+  
+  /* Style the "Initiate Battle" button */
+  #initiateBattle {
+    background-color: #5cb85c;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px; margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #initiateBattle:hover{
+    background-color: #4cae4c;
+  }
+
+  /* Style all input elements with width 600px and border radius 10px */
+  input {
+    width: 900px;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 134, 134);
+    padding: 10px;
+    margin: 10px 0;
+  }
+  input:hover{border: 1px solid #7dadd8; }
+  input::shadow { border: 1px solid #7dadd8;}
+#wrapper{
+  margin: 10px auto; width: 740px;
+}
+
+.player-columns {
+  width: 726px;
+  height: auto;
+  margin: auto;
+  background: none;
+}
+#desk{
+  height: 500px;
+  background: none;
+}
+#desk2{
+  height: 400px;
+  background: none;
+}
+.btn2{
+  text-align: center;
+  position: relative;
+}
+#playerOneInfo{
+  margin-right: 20px;
+}
+.battle-result{
+  width: 710px;
+  height: auto;
+  margin: auto;
+  background: none;
+}
+
+.result-container{
+  margin: 10px auto; width: 760px; height: auto;
+  margin-bottom: 30px;
+}
+
+.player-info, .player-Info{
+  position: relative;
+  width: 350px;
+  height: 100%;
+  border: 1px solid #eee;
+  margin-bottom: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  padding-top: 10px;
+}
+.player-info{
+  float: left;
+}
+
+.player-Info{
+  float: right;
+}
+.user-img{
+    position: relative;
+    width: 100%;
+}
+
+  .hidden {
+    display: none;
+  }
+  #wrapper1 {
+    padding: 20px;
+    margin: auto;
+    height: auto;
+    width: 900px;
+  }
+table{
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+td {
+    border: 1px solid #eee;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+#static {
+  width: 200px;
+  color: red;
+  padding-top: 20px; margin-top: 30px;
+  
+}
+
+.winner-info{
+  width: 350px;
+  border: 1px solid #eee;
+  height: 100%;
+  float: left;
+}
+
+.loser-info{
+  width: 350px;
+  border: 1px solid #eee;
+  height: 100%;
+  float: right;
+}
+
+.winner-info, .loser-info{
+  padding: 10px auto;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+}
+
+
+#dog{
+  width: 300px;
+  height: 200px;
+  color: chartreuse;
+}
+
+
+#startOverButton{
+  margin-top: 15px;
+  margin: 10px auto;
+  width:150px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #5cb85c;
+  align-items: center;
+  justify-content: center;
+}
+
+#butt{
+  display: flex;
+}
+
+@media screen and (max-width:300px){
+  input {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid rgb(134, 134, 134);
+    padding: 3px;
+    margin: 5px 0;
+  }
+  .confirm-players, .winner-screen{
+    height: 100%;
+    padding: 5px;
+  }
+}
